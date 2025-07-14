@@ -1,0 +1,20 @@
+/* NewsAchievements.css */
+
+.card {
+  cursor: pointer;
+  background-color: #f9fafb; /* bg-gray-50 */
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* shadow-md */
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+/* On hover on large screens (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 25px 50px -12px rgba(59, 130, 246, 0.5); /* shadow-2xl with blue tint */
+    border: 2px solid #93c5fd; /* light blue border (blue-300) */
+  }
+}
